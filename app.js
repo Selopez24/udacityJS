@@ -31,3 +31,46 @@ console.log("This is a \n new line and \t tab test");
 
 var haiku = 'Blowing from the west' + '\nFallen leaves gather' + '\nIn the east.'
 console.log(haiku);
+
+/*
+ * Conditionals
+ */
+
+ //If and Else if statements
+
+ var weather = "sunny";
+
+if (weather === "snow") {
+  console.log("Bring a coat.");
+} else if (weather === "rain") {
+  console.log("Bring a rain jacket.");
+} else {
+  console.log("Wear what you have on.");
+}
+
+
+
+// Ternary operator
+
+var isGoing = true;
+var color = isGoing ? "green" : "red"; //  conditional ? (if condition is true) : (if condition is false)
+console.log(color);
+
+// Switch 
+
+var option = 1;
+
+switch (option) {
+  case 1:
+    console.log("You selected option 1.");
+  case 2:
+    console.log("You selected option 2.");
+  case 3:
+    console.log("You selected option 3.");
+  case 4:
+    console.log("You selected option 4.");
+  case 5:
+    console.log("You selected option 5.");
+  case 6:
+    console.log("You selected option 6.");
+}
