@@ -63,14 +63,28 @@ var option = 1;
 switch (option) {
   case 1:
     console.log("You selected option 1.");
+    break;
   case 2:
     console.log("You selected option 2.");
+    break;
   case 3:
     console.log("You selected option 3.");
+    break;
   case 4:
     console.log("You selected option 4.");
+    break;
   case 5:
     console.log("You selected option 5.");
+    break;
   case 6:
     console.log("You selected option 6.");
+    break; // technically, not needed
+}
+
+// For loops
+
+for (var x = 0; x < 5; x = x + 1) {
+  for (var y = 0; y < 3; y = y + 1) {
+    console.log(x + "," + y);
+  }
 }
