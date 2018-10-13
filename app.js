@@ -89,7 +89,9 @@ for (var x = 0; x < 5; x = x + 1) {
   }
 }
 
-/*
+/*Functions
+ * 
+ *
  * Programming Quiz: Laugh it Off 2 (5-2)
  *
  * Write a function called `laugh` with a parameter named `num` that represents the number of "ha"s to return.
@@ -114,3 +116,41 @@ function laugh(num){
 }
 
 console.log(laugh(4))
+
+
+// Arrays
+
+var donuts = ["glazed", "chocolate frosted", "Boston cream", "powdered", "sprinkled", "maple", "coconut", "jelly"];
+console.log(donuts[2]);
+
+donuts.pop();   // removes last element
+donuts.push("Arequipe"); // adds to the last element
+
+// forEach()
+donuts.forEach(function(donut) {
+  donut += " hole";
+  donut = donut.toUpperCase();
+  console.log(donut);
+});
+
+// map()
+var improvedDonuts = donuts.map(function(donut) {
+  donut += " hole";
+  donut = donut.toUpperCase();
+  return donut;
+});
+
+// Array of arrays
+
+var donutBox = [
+  ["glazed", "chocolate glazed", "cinnamon"],
+  ["powdered", "sprinkled", "glazed cruller"],
+  ["chocolate cruller", "Boston creme", "creme de leche"]
+];
+
+for (var row = 0; row < donutBox.length; row++) {
+  // here, donutBox[row].length refers to the length of the donut array currently being looped over
+  for (var column = 0; column < donutBox[row].length; column++) {
+    console.log(donutBox[row][column]);
+  }
+}   
